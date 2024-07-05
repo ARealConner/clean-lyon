@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { register } from 'swiper/element/bundle';
 
+	let n_slides = 22;
 	let totalSlides = 0;
 	let slides: string[] = [];
 	let presentationContainer: HTMLElement;
@@ -21,8 +22,7 @@
 		register();
 
 		// Dynamically determine the number of slides
-		let i = 1;
-		while (true) {
+		for (let i = 1; i <= n_slides; i++) {
 			try {
 				const response = await fetch(`/slides/Slide${i}.jpg`);
 				if (response.ok) {
@@ -45,14 +45,25 @@
 		<swiper-container navigation="true" pagination="true" scrollbar="true">
 			{#each slides as slide}
 				<swiper-slide>
-					<img src={slide} alt="Presentation Slide" class="w-full h-auto" />
+					<img src={slide} alt="Presentation Slide" class="h-auto w-full" />
 				</swiper-slide>
 			{/each}
 		</swiper-container>
 		<div class="fullscreen-btn-container">
 			<button on:click={toggleFullScreen} class="fullscreen-btn" aria-label="Toggle fullscreen">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
-					<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="h-6 w-6"
+				>
+					<path
+						d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
+					/>
 				</svg>
 			</button>
 		</div>
