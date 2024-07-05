@@ -115,7 +115,7 @@
 				}
 			],
 			recommendation:
-				'For urban areas with limited land availability and high energy demands, incineration with energy recovery is often the preferred option. However, it should be implemented with state-of-the-art emission control systems and as part of a comprehensive waste management strategy that prioritizes recycling and composting. Landfills may be more suitable for rural areas with available land, but should incorporate methane capture systems.'
+				'While there is a greater initial cost, incineration should be prioritized over landfills due to its much greater sustainability. Especially when considering that energy sales of a incineration plan can in the long term cover the costs. However, it should be implemented with state-of-the-art emission control systems and as part of a comprehensive waste management strategy that prioritizes recycling and composting. If landfills are used, they should incorporate methane capture systems.'
 		},
 		{
 			title: 'Recyclables',
