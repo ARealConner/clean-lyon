@@ -76,7 +76,7 @@
 				}
 			],
 			recommendation:
-				'Implement a hybrid collection system combining household collection for general waste with strategically placed public collection bins for glass, plastic, paper, and compost. Maintain centralized collection centers for larger items and less frequent waste streams. This multi-faceted approach, as demonstrated in Lyon, maximizes convenience, encourages proper sorting, and optimizes resource recovery. Ensure a high density of public bins (aim for one set per 100-150 residents) and use data analytics to optimize collection routes and frequencies.'
+				'Implement a hybrid collection system combining household collection for general waste with strategically placed public collection bins for glass, plastic, paper, and compost. Maintain centralized collection centers for larger items and less frequent waste streams. This multi-faceted approach, as demonstrated in Lyon, maximizes convenience, encourages proper sorting, and optimizes resource recovery. Ensure a high density of public bins and use data analytics to optimize collection routes and frequencies.'
 		},
 		{
 			title: 'General Waste',
