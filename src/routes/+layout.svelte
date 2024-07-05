@@ -1,6 +1,7 @@
 <script lang="ts">
 	import "../app.css";
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';  // Add this import
 	import { Menu, X, Sun, Moon, Home, Info, FileText, Map, Book, ExternalLink, Presentation } from 'lucide-svelte';
 	import { fade, fly, slide } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';
@@ -26,12 +27,12 @@
 	}
   
 	const menuItems = [
-	  { href: '/', label: 'Home', icon: Home },
-	  { href: '/about', label: 'About', icon: Info },
-	  { href: '/report', label: 'Report', icon: FileText },
-	  { href: '/presentation', label: 'Presentation', icon: Presentation },
-	  { href: '/lyon-waste-map', label: 'Waste Map', icon: Map },
-	  { href: '/waste-management-guide', label: 'Management Guide', icon: Book }
+	  { href: `${base}/`, label: 'Home', icon: Home },
+	  { href: `${base}/about`, label: 'About', icon: Info },
+	  { href: `${base}/report`, label: 'Report', icon: FileText },
+	  { href: `${base}/presentation`, label: 'Presentation', icon: Presentation },
+	  { href: `${base}/lyon-waste-map`, label: 'Waste Map', icon: Map },
+	  { href: `${base}/waste-management-guide`, label: 'Management Guide', icon: Book }
 	];
 
 	const currentYear = new Date().getFullYear();
@@ -46,7 +47,7 @@
 	   class:py-4={!isScrolled} class:py-2={isScrolled}>
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 	  <div class="flex justify-between items-center">
-		<a href="/" class="text-4xl font-black tracking-tighter transition-all duration-300 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
+		<a href="{base}/" class="text-4xl font-black tracking-tighter transition-all duration-300 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
 		  Clean<span class="text-yellow-400">Lyon</span>
 		</a>
 		<div class="hidden md:flex space-x-2">
