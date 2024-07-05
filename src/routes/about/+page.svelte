@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import { Linkedin, Mail, ExternalLink } from 'lucide-svelte';
+	import { base } from '$app/paths';
 
 	let visible = false;
 
@@ -122,7 +123,11 @@
 				{#each teamMembers as member}
 					<div class="overflow-hidden rounded-lg bg-white shadow-lg">
 						<div class="h-80 overflow-hidden">
-							<img src={member.image} alt={member.name} class="w-full h-full object-cover object-top" />
+							<img
+								src={`${base}${member.image}`}
+								alt={member.name}
+								class="h-full w-full object-cover object-top"
+							/>
 						</div>
 						<div class="p-4">
 							<h3 class="text-xl font-semibold">{member.name}</h3>
@@ -157,7 +162,11 @@
 				{#each advisors as advisor}
 					<div class="overflow-hidden rounded-lg bg-white shadow-lg">
 						<div class="h-80 overflow-hidden">
-							<img src={advisor.image} alt={advisor.name} class="w-full h-full object-cover object-top" />
+							<img
+								src={`${base}${advisor.image}`}
+								alt={advisor.name}
+								class="h-full w-full object-cover object-top"
+							/>
 						</div>
 						<div class="p-6">
 							<h3 class="mb-2 text-xl font-semibold">{advisor.name}</h3>
@@ -181,19 +190,19 @@
 			<h2 class="mb-4 text-2xl font-semibold">Project Sponsor</h2>
 			<div class="overflow-hidden rounded-lg bg-white shadow-lg">
 				<div class="relative" style="height: 600px;">
-					<img 
-						src="/images/drew-brodeur.jpg" 
-						alt="Dr. Drew Brodeur" 
-						class="absolute inset-0 w-full h-full object-cover object-top"
+					<img
+						src={`${base}/images/drew-brodeur.jpg`}
+						alt="Dr. Drew Brodeur"
+						class="absolute inset-0 h-full w-full object-cover object-top"
 					/>
 				</div>
 				<div class="p-6">
 					<h3 class="mb-2 text-xl font-semibold">Professor Drew Brodeur</h3>
 					<p class="mb-2 text-gray-600">Department of Chemistry & Biochemistry, WPI</p>
 					<p class="mb-4 text-lg">
-						Professor Brodeur sponsored our project, providing the initial vision and ongoing support.
-						His expertise in environmental chemistry and passion for sustainable practices were key
-						drivers in the success of our research.
+						Professor Brodeur sponsored our project, providing the initial vision and ongoing
+						support. His expertise in environmental chemistry and passion for sustainable practices
+						were key drivers in the success of our research.
 					</p>
 					<a
 						href="https://www.wpi.edu/people/faculty/dbrodeur"
@@ -234,6 +243,4 @@
 		font-family: 'Open Sans', sans-serif;
 	}
 </style>
-
-
 
