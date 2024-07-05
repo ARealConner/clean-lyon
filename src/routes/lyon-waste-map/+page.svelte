@@ -4,6 +4,7 @@
 	import type { Map as LeafletMap } from 'leaflet';
 	import { fetchCategoryData, generateHeatMapData, type MarkerCategory } from '$lib/fetchData';
 	import { mapCategories } from '$lib/mapConfig';
+	import '@fortawesome/fontawesome-free/css/all.min.css';
 
 	let L: typeof import('leaflet') & { heatLayer: any };
 	let map: LeafletMap;
