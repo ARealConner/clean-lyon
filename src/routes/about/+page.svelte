@@ -88,7 +88,7 @@
 		<section class="mb-12">
 			<h2 class="mb-4 text-2xl font-semibold">Our Mission</h2>
 			<p class="mb-4 text-lg">
-				CleanLyon was an International Qualifying Project (IQP) conducted by a team of Worcester
+				CleanLyon was an Interactive Qualifying Project (IQP) conducted by a team of Worcester
 				Polytechnic Institute (WPI) students. Our mission was to analyze and document Lyon's
 				innovative urban waste management practices, creating a comprehensive case study that can
 				inspire and guide other cities in improving their waste management systems.
@@ -243,4 +243,3 @@
 		font-family: 'Open Sans', sans-serif;
 	}
 </style>
-

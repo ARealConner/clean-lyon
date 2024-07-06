@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { register } from 'swiper/element/bundle';
 
-	let n_slides = 22;
+	let n_slides = 23;
 	let totalSlides = 0;
 	let slides: string[] = [];
 	let presentationContainer: HTMLElement;

@@ -72,8 +72,8 @@
 					<div class="relative z-10">
 						<h2 class="mb-4 text-3xl font-semibold text-gray-800">Project Overview</h2>
 						<p class="mb-4 text-lg text-gray-600">
-							Our International Qualifying Project (IQP) at Worcester Polytechnic Institute focused
-							on analyzing Lyon's urban waste management system. We conducted extensive research,
+							Our Interactive Qualifying Project (IQP) at Worcester Polytechnic Institute focused on
+							analyzing Lyon's urban waste management system. We conducted extensive research,
 							interviews, and on-site observations to understand the city's innovative approaches
 							and their potential application in other urban environments.
 						</p>
@@ -157,4 +157,3 @@
 		{/if}
 	</div>
 </div>
-

@@ -151,7 +151,7 @@
           <h3 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-200 mb-2">
             CleanLyon Team
           </h3>
-          <p class="text-lg mb-4">International Qualifying Project {currentYear}</p>
+          <p class="text-lg mb-4">Interactive Qualifying Project {currentYear}</p>
           <a href="https://www.wpi.edu" target="_blank" rel="noopener noreferrer" 
              class="inline-flex items-center px-6 py-2 border border-transparent text-base font-medium rounded-full shadow-sm text-green-700 bg-yellow-300 hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-all duration-300">
             Visit Project Page
