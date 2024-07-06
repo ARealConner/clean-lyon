@@ -197,12 +197,12 @@
 					/>
 				</div>
 				<div class="p-6">
-					<h3 class="mb-2 text-xl font-semibold">Professor Drew Brodeur</h3>
+					<h3 class="mb-2 text-xl font-semibold">Dr. Drew Brodeur</h3>
 					<p class="mb-2 text-gray-600">Department of Chemistry & Biochemistry, WPI</p>
 					<p class="mb-4 text-lg">
-						Professor Brodeur sponsored our project, providing the initial vision and ongoing
-						support. His expertise in environmental chemistry and passion for sustainable practices
-						were key drivers in the success of our research.
+						Dr. Brodeur sponsored our project, providing the initial vision and ongoing support. His
+						guidance and passion for sustainable practices were key drivers in the success of our
+						research.
 					</p>
 					<a
 						href="https://www.wpi.edu/people/faculty/dbrodeur"
