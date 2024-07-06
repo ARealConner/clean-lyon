@@ -37,7 +37,7 @@
 
 	const currentYear = new Date().getFullYear();
 
-	// Add this line to create a prop for controlling the container
+	// control if the container is used
 	export let useContainer = false;
 </script>
 

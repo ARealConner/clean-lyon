@@ -32,16 +32,16 @@
 			// Create an empty layer control
 			layerControl = L.control.layers({}, {}).addTo(map);
 
-			// Fetch all category data first
+			// Fetch all category data
 			const categoryPromises = mapCategories.map((category) => fetchCategoryData(category));
 			const categories = await Promise.all(categoryPromises);
 
-			// Add marker layers first
+			// Add marker layers
 			categories.forEach((category) => {
 				addLayerToMap(category);
 			});
 
-			// Then add heat map layers
+			// add heat map layers
 			for (const category of categories) {
 				const heatMapData = await generateHeatMapData(category);
 				addHeatMapLayer(category.name, heatMapData, category.color);
@@ -94,8 +94,8 @@
 
 	function addHeatMapLayer(categoryName: string, data: number[][], color: string) {
 		const heatLayer = L.heatLayer(data, {
-			radius: 40, // Increased from 25 to 40
-			blur: 30, // Increased from 15 to 30
+			radius: 40,
+			blur: 30,
 			maxZoom: 17,
 			max: 1,
 			gradient: { 0.2: '#ff0000', 0.4: '#ff7f00', 0.6: '#ffff00', 0.8: '#7fff00', 1: '#00ff00' }
