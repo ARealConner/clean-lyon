@@ -2,8 +2,8 @@
 	import { onMount } from 'svelte';
 	import { register } from 'swiper/element/bundle';
 
-	let n_slides = 23;
-	let totalSlides = 0;
+	let totalSlides = 23;
+	let loadedSlides = 0;
 	let slides: string[] = [];
 	let presentationContainer: HTMLElement;
 
@@ -18,30 +18,17 @@
 	}
 
 	onMount(async () => {
-		// Register Swiper custom elements
 		register();
 
-		// Dynamically determine the number of slides
-		for (let i = 1; i <= n_slides; i++) {
-			try {
-				const response = await fetch(`/slides/Slide${i}.jpg`);
-				if (response.ok) {
-					slides = [...slides, `/slides/Slide${i}.jpg`];
-					totalSlides++;
-					i++;
-				} else {
-					break; // Stop when we can't find the next slide
-				}
-			} catch (error) {
-				console.error(`Error loading Slide${i}.jpg:`, error);
-				break;
-			}
+		for (let i = 1; i <= totalSlides; i++) {
+			slides = [...slides, `/slides/Slide${i}.jpg`];
+			loadedSlides++;
 		}
 	});
 </script>
 
 <div class="presentation-container" bind:this={presentationContainer}>
-	{#if totalSlides > 0}
+	{#if loadedSlides > 0}
 		<swiper-container navigation="true" pagination="true" scrollbar="true">
 			{#each slides as slide}
 				<swiper-slide>
