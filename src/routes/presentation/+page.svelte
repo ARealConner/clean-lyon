@@ -28,7 +28,7 @@
 </script>
 
 <div class="presentation-container" bind:this={presentationContainer}>
-	{#if loadedSlides > 0}
+	{#if loadedSlides >= totalSlides}
 		<swiper-container navigation="true" pagination="true" scrollbar="true">
 			{#each slides as slide}
 				<swiper-slide>
