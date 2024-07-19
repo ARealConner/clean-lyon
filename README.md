@@ -1,38 +1,41 @@
-# create-svelte
+# CleanLyon: Urban Waste Management in Lyon, France
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## Project Overview
 
-## Creating a project
+This repository contains the code and resources for the CleanLyon project, an Interactive Qualifying Project (IQP) conducted by Worcester Polytechnic Institute (WPI) students in Lyon, France. The project focuses on analyzing and documenting Lyon's urban waste management practices, with the goal of creating a comprehensive case study that can inspire and guide other cities in improving their waste management systems.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Website
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+The project website, built with Svelte 5 and TypeScript, showcases our findings and provides interactive resources for exploring Lyon's waste management infrastructure. Visit the live site at [clean-lyon.eu](https://clean-lyon.eu).
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+### Features
 
-## Developing
+- Interactive map of Lyon's waste management infrastructure
+- Detailed project report
+- Presentation summarizing key findings
+- Urban Waste Management Best Practices Guide
+- Information about the project team and objectives
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Repository Structure
 
-```bash
-npm run dev
+- `src/`: Source code for the Svelte 5 website
+- `static/`: Static assets including images and documents
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Local Development
 
-## Building
+To run the project locally:
 
-To create a production version of your app:
+1. Clone the repository
+2. Install dependencies with `npm install`
+3. Start the development server with `npm run dev`
 
-```bash
-npm run build
-```
+## Contributors
 
-You can preview the production build with `npm run preview`.
+- Casey LaMarca
+- Conner Olsen
+- Ming Tang
+- Nolan Willoughby
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Acknowledgements
+
+We would like to thank our project sponsor, Professor Drew Brodeur, and our advisors, Professors Grant Burrier and Tahar El-Korchi, for their guidance and support throughout this project.
